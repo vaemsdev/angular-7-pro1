@@ -1,0 +1,4 @@
+<h2 *ngIf="items.length == 0" class="data-loading">Loading Followers...</h2>
+<ul class="list-data">
+    <li *ngFor="let i = index;let item of items; ">{{item.name}}</li>
+</ul>

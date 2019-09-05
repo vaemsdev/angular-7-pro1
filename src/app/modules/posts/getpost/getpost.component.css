@@ -1,0 +1,13 @@
+.details{
+    padding: 20px 10px;
+    color: #808080;
+    display: inline-block;
+    overflow-wrap: break-word;
+    width: 100%;
+}
+
+@media(max-width : 500px){
+    .details{
+        font-size: 10px;
+    }
+}

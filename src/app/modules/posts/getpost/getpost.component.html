@@ -1,0 +1,8 @@
+<h2 *ngIf="posts.length == 0" class="data-loading">Loading Posts...</h2>
+<ul class="list-data">
+    <li *ngFor="let i = index;let item of posts; ">
+        <div class="avatar">
+            <img src="assets/img/{{item.avatar}}" />
+        </div>
+        <div class="details"><a [routerLink]="['/posts',item.id]">{{item.first_name + ' ' +item.last_name}}</a><br>{{item.email}}</div></li>
+</ul>

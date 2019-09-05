@@ -1,0 +1,37 @@
+*1. import external javascript to component :
+
+-> create js file in same folder
+-> import it
+-> create object of exported class by your js file
+-> access object methods/vars
+
+######
+@component
+import  test from './test';
+
+ngOnInit (): void {
+    var mytest = new test();
+    mytest.show();
+}
+@ext.js file
+
+export default class test{
+
+    show(){
+        alert('hello');
+    }
+}
+
+#######
+
+*2 install bootstrap in angular-cli
+
+-> npm install ngx-bootstrap bootstrap --save
+-> edit application.json
+-> add bootstrap file path to styles array property ("node_modules/bootstrap/dist/css/bootstrap.min.css")
+
+*3 install jquery in angular-cli
+
+-> npm install jquery --save
+-> edit application.json
+-> add jquery.min.js file path to scripts array property ("node_modules/jquery/dist/jquery.min.js")
